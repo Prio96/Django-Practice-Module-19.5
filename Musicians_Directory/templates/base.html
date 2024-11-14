@@ -23,10 +23,10 @@
               </li>
               {% if request.user.is_authenticated %}
               <li class="nav-item">
-                <a class="nav-link" href="#">Add Musician</a>
+                <a class="nav-link" href="{% url 'AddMusician' %}">Add Musician</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Add Album</a>
+                <a class="nav-link" href="{% url 'AddAlbum' %}">Add Album</a>
               </li>
               {% endif %}
             </ul>
