@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("album/",include("Album.urls")),
     path("musician/",include("Musician.urls")),
-    path("",views.home)
+    path("",views.home,name="Homepage")
 ]

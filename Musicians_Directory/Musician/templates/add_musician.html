@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+<form class="w-50 m-auto" method="post">
+{% csrf_token %}
+{{form|crispy}}
+<input type="submit" class="btn btn-primary" value="Add">
+</form>
