@@ -8,4 +8,6 @@ class Musician(models.Model):
     phone_number=models.CharField(max_length=20)
     instrument_type=models.CharField(max_length=50)
 
+    def __str__(self):
+        return f"{self.first_name} {self.last_name}"
     
