@@ -4,6 +4,6 @@
 <form class="w-50 m-auto" method="post">
     {% csrf_token %}
     {{form|crispy}}
-    <input type="submit" class="btn btn-primary" value="Add">
+    <input type="submit" class="btn btn-primary" value="{{type}}">
 </form>
 {% endblock content %}

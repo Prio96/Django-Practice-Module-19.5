@@ -22,7 +22,6 @@ class EditAlbum(UpdateView):
 @method_decorator(login_required,name='dispatch')
 class DeleteAlbum(DeleteView):
     model=Album
-    form_class=AlbumForm
     template_name='delete_album.html'
     success_url=reverse_lazy("Homepage")
     pk_url_kwarg='id'
